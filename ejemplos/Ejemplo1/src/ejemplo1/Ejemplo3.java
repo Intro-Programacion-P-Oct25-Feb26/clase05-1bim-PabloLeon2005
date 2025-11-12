@@ -23,7 +23,7 @@ public class Ejemplo3 {
         entrada.useLocale(Locale.US);
         
         double promedio;
-        double limiteNotas = 6.9;
+        double limiteNotas;
         System.out.println("Ingrese el limite de notas");
         limiteNotas = entrada.nextDouble();
         
