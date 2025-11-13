@@ -21,21 +21,17 @@ public class Ejemplo4 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         double promedio;
-        String nombreEstudiante;
-
-        
         System.out.println("Ingrese la nota necesaria");
         promedio = entrada.nextDouble();
-        
         entrada.nextLine();
+        String nombre_estudiante;
+        System.out.println("Ingrese el nombre del Estudiante");
+        nombre_estudiante = entrada.nextLine();
         
-        System.out.println("Ingrese el nombre del estudiante");
-        nombreEstudiante = entrada.nextLine();
         
-
         if (promedio >= 7.5 && promedio <=10) { // Falso
-            System.out.printf("Estudiante %s aprobado con un "
-                    + "promedio: %.2f\n", nombreEstudiante, promedio);
+            System.out.printf("Estudiante: %s\nAprobo con un "
+                    + "promedio: %.2f\n",nombre_estudiante, promedio);
         } // -------------
     }
 
